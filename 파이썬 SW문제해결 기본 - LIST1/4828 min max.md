@@ -72,3 +72,19 @@ for t in range(1, int(input())+1):  # 테스트케이스 t 입력받고 t번 반
 ```
 
 파이썬 내장함수 `max()`, `min()` 사용
+
+
+
+## 5.
+
+```python
+for T in range(1, int(input())+1):
+    N = int(input())
+    max_value, min_value = 0, 1000001
+    for value in map(int, input().split()):
+        max_value = value if value > max_value else max_value
+        min_value = value if min_value > value else min_value
+    print(f'#{T} {max_value - min_value}')
+```
+
+실습 과제
